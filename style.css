@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  background-color: #87CEFA;
+}
+
+.filtro-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+  
+  display: flex; /* ATIVA FLEXBOX */
+  align-items: center; /* ALINHA VERTICALMENTE */
+  justify-content: center; /* SEPARA os extremos: imagem na esquerda, link na direita */
+}
+
+.feiraciencias {
+  width: 200px;
+  height: auto;
+  margin-left: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  flex-grow: 1; /* Faz o título ocupar espaço central */
+}
+
+.instagram-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-right: 50px;
+}
+
+.instagram-link:hover {
+  text-decoration: none;
+}
+
+.imagemprinc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.imagemprinc img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+}
+
+.titulo {
+  position: absolute;
+  top: 26%;
+  left: 34%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.titulo .azul {
+  color: #87CEFA; /* Azul-marinho */
+}
+
+@media (max-width: 720px) {
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .feiraciencias {
+    width: 150px;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .instagram-link {
+    margin-right: 15px;
+    font-size: 15px;
+  }
+
+  .imagemprinc {
+    margin-top: 20px;
+  }
+
+  .imagemprinc img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 8%;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    top: 13%;
+    left: 25%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 10px; /* evita que o texto encoste nas bordas */
+  }
+}
+
+@media (max-width: 480px) {
+  
+  header {
+    padding: 10px 20px;
+  }
+
+  .feiraciencias {
+    width: 120px;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .instagram-link {
+    margin-right: 7px;
+    font-size: 12px;
+  }
+
+  .imagemprinc {
+    margin-top: 7%;
+  }
+
+  .imagemprinc img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 8%;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    top: 12%;
+    left: 32%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 10px; /* evita que o texto encoste nas bordas */
+  }
+
+
+}
