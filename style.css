@@ -20,7 +20,6 @@ header {
   position: relative;
   width: 100%;
   box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-  z-index: 1000;
   
   display: flex; /* ATIVA FLEXBOX */
   align-items: center; /* ALINHA VERTICALMENTE */
@@ -95,14 +94,15 @@ header h1 {
   .feiraciencias {
     width: 150px;
     height: auto;
+    margin-left: 5px;
   }
 
   header h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .instagram-link {
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 15px;
   }
 
@@ -120,14 +120,14 @@ header h1 {
   .titulo {
     font-size: 24px;
     top: 13%;
-    left: 25%;
+    left: %;
     transform: translateX(-50%);
     text-align: center;
     padding: 0 10px; /* evita que o texto encoste nas bordas */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   
   header {
     padding: 10px 20px;
@@ -136,7 +136,7 @@ header h1 {
   .feiraciencias {
     width: 120px;
     height: auto;
-    margin-left: 5px;
+    margin-left: 1px;
   }
 
   header h1 {
@@ -144,7 +144,7 @@ header h1 {
   }
 
   .instagram-link {
-    margin-right: 7px;
+    margin-right: 1px;
     font-size: 12px;
   }
 
@@ -161,8 +161,8 @@ header h1 {
   
   .titulo {
     font-size: 24px;
-    top: 12%;
-    left: 32%;
+    top: 14%;
+    left: 35%;
     transform: translateX(-50%);
     text-align: center;
     padding: 0 10px; /* evita que o texto encoste nas bordas */
