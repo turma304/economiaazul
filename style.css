@@ -481,3 +481,65 @@
                 align-items: center;
             }
         }
+        /* Novos estilos para as seções adicionadas */
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.project-details {
+    background-color: var(--blue-light);
+    padding: 4rem 0;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.detail-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-10px);
+}
+
+.detail-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.detail-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.conclusion-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conclusion p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
